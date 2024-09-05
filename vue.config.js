@@ -1,8 +1,8 @@
-const TransformPages = require('uni-read-pages');
-const devServerConfig = require('./src/configs/devServer');
-const pageConfig = require('./src/configs');
+const TransformPages = require('uni-read-pages')
+const devServerConfig = require('./src/configs/devServer')
+const pageConfig = require('./src/configs')
 
-const { webpack } = new TransformPages();
+const { webpack } = new TransformPages()
 
 module.exports = {
   publicPath: pageConfig.appBasePath,
@@ -16,16 +16,16 @@ module.exports = {
       hot: true, // false防止开发模式白屏(使用路由缓存时)
       ...(devServerConfig.useProxy && devServerConfig.proxyURL
         ? {
-          proxy: {
-            /** 解决本地测试跨域问题 */
-            [`${devServerConfig.proxyPath}`]: {
-              target: devServerConfig.proxyURL,
-              pathRewrite: {
-                [`^${devServerConfig.proxyPath}`]: '',
+            proxy: {
+              /** 解决本地测试跨域问题 */
+              [`${devServerConfig.proxyPath}`]: {
+                target: devServerConfig.proxyURL,
+                pathRewrite: {
+                  [`^${devServerConfig.proxyPath}`]: '',
+                },
               },
             },
-          },
-        }
+          }
         : {}),
     },
     plugins: [
@@ -33,12 +33,12 @@ module.exports = {
         ROUTES: webpack.DefinePlugin.runtimeValue(() => {
           const tfPages = new TransformPages({
             includes: ['path', 'name', 'aliasPath'],
-          });
-          return JSON.stringify(tfPages.routes);
+          })
+          return JSON.stringify(tfPages.routes)
         }, true),
       }),
     ],
   },
   // 指定需要编译的依赖
   transpileDependencies: ['uview-ui'],
-};
+}

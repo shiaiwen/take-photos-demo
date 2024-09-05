@@ -8,6 +8,7 @@ module.exports = {
     'plugin:vue/recommended',
     'eslint:recommended',
     'airbnb-base',
+    'plugin:prettier/recommended',
   ],
   parserOptions: {
     parser: 'babel-eslint',
@@ -52,4 +53,4 @@ module.exports = {
     'import/no-named-as-default': 'off',
     'no-empty-function': 'off',
   },
-};
+}
