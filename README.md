@@ -2,7 +2,17 @@
 
 # vue-cli-uniapp
 
-基于uniapp cli模式集成最佳实践脚手架, ui库使用 [uview](https://v1.uviewui.com/)(已配置全自动按需导入), css 框架使用 [windicss](https://windicss.org/)(下一代css框架), 请求使用[axios](http://www.axios-js.com/)的方式(添加了uniapp适配器支持) 路由使用 [uni-simple-router](https://hhyang.cn/v2/)(同vue-router的api无须重新阅读文档,配置了路由自动生成) 
+## 快速上手
+
+```sh
+git clone https://github.com/shiaiwen/take-photos-demo.git
+npm install   # node v14.21.3
+npm run dev:mp-weixin
+微信小程序开发者工具打开 `dist\dev\mp-weixin`
+demo 路径 `vue-cli-uniapp\src\pages\take-photos`
+```
+
+基于 uniapp cli 模式集成最佳实践脚手架, ui 库使用 [uview](https://v1.uviewui.com/)(已配置全自动按需导入), css 框架使用 [windicss](https://windicss.org/)(下一代 css 框架), 请求使用[axios](http://www.axios-js.com/)的方式(添加了 uniapp 适配器支持) 路由使用 [uni-simple-router](https://hhyang.cn/v2/)(同 vue-router 的 api 无须重新阅读文档,配置了路由自动生成)
 
 <!-- PROJECT SHIELDS -->
 
@@ -11,6 +21,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+
 <!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 <!-- PROJECT LOGO -->
@@ -34,29 +45,32 @@
     <a href="https://github.com/viarotel/vue-cli-uniapp/issues">提出新特性</a>
   </p>
 
-
-
 ## 目录
 
-- [上手指南](#上手指南)
-  - [获取本项目](#获取本项目)
-  - [运行本项目](#运行项目)
-    - [任意编辑器直接运行本项目](#任意编辑器直接运行本项目)
-    - [在HBuilder中运行本项目](#在HBuilder中运行本项目)
-  - [打包发行](#打包发行)
-    - [任意编辑器发行本项目](#任意编辑器发行本项目)
-    - [在HBuilder中发行本项目](#在HBuilder中发行本项目)
-- [文件目录说明](#文件目录说明)
-- [使用到的框架和库](#使用到的框架和库)
-- [版本控制](#版本控制)
-- [作者](#作者)
-- [鸣谢](#鸣谢)
+- [vue-cli-uniapp](#vue-cli-uniapp)
+  - [快速上手](#快速上手)
+  - [目录](#目录)
+    - [上手指南](#上手指南)
+      - [获取本项目](#获取本项目)
+      - [运行项目](#运行项目)
+        - [任意编辑器直接运行本项目](#任意编辑器直接运行本项目)
+        - [在 HBuilder 中运行本项目](#在-hbuilder-中运行本项目)
+      - [打包发行](#打包发行)
+        - [任意编辑器发行本项目](#任意编辑器发行本项目)
+        - [在 HBuilder 中发行本项目](#在-hbuilder-中发行本项目)
+    - [文件目录说明](#文件目录说明)
+    - [使用到的框架和库](#使用到的框架和库)
+    - [关键字](#关键字)
+    - [版本控制](#版本控制)
+    - [作者](#作者)
+    - [版权说明](#版权说明)
+    - [鸣谢](#鸣谢)
 
 ### 上手指南
 
 #### 获取本项目
 
-1. clone 本项目 或 直接下载main包
+1. clone 本项目 或 直接下载 main 包
 
 ```sh
 git clone https://github.com/viarotel/vue-cli-uniapp.git
@@ -74,10 +88,10 @@ npm install //or yarn
 npm run serve //or yarn serve
 ```
 
-##### 在HBuilder中运行本项目
+##### 在 HBuilder 中运行本项目
 
-1. 将项目拖动到HBuilder中
-2. 点击项目src目录中的任意文件
+1. 将项目拖动到 HBuilder 中
+2. 点击项目 src 目录中的任意文件
 3. 点击编辑器上方点击运行选择需要运行的环境
 
 #### 打包发行
@@ -92,10 +106,10 @@ npm install //or yarn
 npm run build //or yarn build 默认为H5环境 更多环境命令请参考 package.json 中的 scripts字段
 ```
 
-##### 在HBuilder中发行本项目
+##### 在 HBuilder 中发行本项目
 
-1. 将项目拖动到HBuilder中
-2. 点击项目src目录中的任意文件
+1. 将项目拖动到 HBuilder 中
+2. 点击项目 src 目录中的任意文件
 3. 点击编辑器上方点击发行选择需要打包的环境
 
 ### 文件目录说明
@@ -159,28 +173,26 @@ filetree
 
 ### 版本控制
 
-该项目使用Git进行版本管理。
+该项目使用 Git 进行版本管理。
 
 ### 作者
 
-viarotel@qq.com
+<viarotel@qq.com>
 
 qq:523469508 wx: viarotel
 
- *您也可以在贡献者名单中参看所有参与该项目的开发者。*
+_您也可以在贡献者名单中参看所有参与该项目的开发者。_
 
 ### 版权说明
 
-该项目签署了MIT 授权许可，详情请参阅 [LICENSE](LICENSE)
+该项目签署了 MIT 授权许可，详情请参阅 [LICENSE](LICENSE)
 
 ### 鸣谢
 
-
-- 感谢[axios-adapter-uniapp](https://github.com/lcysgsg/axios-adapter-uniapp)提供的axios适配器
+- 感谢[axios-adapter-uniapp](https://github.com/lcysgsg/axios-adapter-uniapp)提供的 axios 适配器
 
 <!-- links -->
 
-[your-project-path]:viarotel/vue-cli-uniapp
 [contributors-shield]: https://img.shields.io/github/contributors/viarotel/vue-cli-uniapp.svg?style=flat-square
 [contributors-url]: https://github.com/viarotel/vue-cli-uniapp/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/viarotel/vue-cli-uniapp.svg?style=flat-square
@@ -191,5 +203,3 @@ qq:523469508 wx: viarotel
 [issues-url]: https://img.shields.io/github/issues/viarotel/vue-cli-uniapp.svg
 [license-shield]: https://img.shields.io/github/license/viarotel/vue-cli-uniapp.svg?style=flat-square
 [license-url]: https://github.com/viarotel/vue-cli-uniapp/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/viarotel
